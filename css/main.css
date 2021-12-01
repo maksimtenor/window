@@ -6495,7 +6495,7 @@ a {
 #menuToggle {
   display: block;
   position: relative;
-  top: 10px;
+  top: 20px;
   left: 10px;
   z-index: 1;
   -webkit-user-select: none;
@@ -6518,8 +6518,8 @@ a {
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -6531,9 +6531,9 @@ a {
 
 #menuToggle span {
   display: block;
-  width: 80px;
+  width: 60px;
   height: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   position: relative;
   background: #cdcdcd;
   border-radius: 3px;
@@ -6566,6 +6566,8 @@ a {
       -ms-transform: rotate(45deg) translate(-2px, -1px);
           transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
+  margin-bottom: -70px;
+  margin-top: 29px;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -6583,13 +6585,11 @@ a {
 
 #menu {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #6d6d6d;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0 0;
@@ -7466,6 +7466,12 @@ a {
   cursor: pointer;
   width: 15px;
   height: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
